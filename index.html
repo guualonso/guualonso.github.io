@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Gustavo</title>
+    <title>Portfólio de Gustavo Moreira Alonso</title>
     <style>
         /* Estilos básicos e fundo escuro */
         body {
@@ -12,82 +12,219 @@
             background: #121212;
             color: #fff;
             font-family: 'Arial', sans-serif;
-            overflow: hidden;
+            overflow-x: hidden;
         }
         header {
-            position: absolute;
+            position: fixed;
             top: 0;
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
-            z-index: 10;
+            z-index: 100;
             text-align: center;
             font-size: 24px;
         }
         .container {
             position: relative;
-            z-index: 10;
-            padding: 100px 20px;
+            z-index: 50;
+            padding: 120px 20px 60px;
             text-align: center;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
         h2 {
-            color: #FFD700;
+            color: #4fc3f7;
+            margin-top: 30px;
         }
-        .projeto {
+        .section {
             margin: 20px auto;
             padding: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            border-left: 4px solid #FFD700;
-            max-width: 600px;
+            background: rgba(0, 0, 0, 0.5);
+            border-left: 4px solid #4fc3f7;
+            max-width: 800px;
             text-align: left;
+            backdrop-filter: blur(5px);
+        }
+        .projeto {
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
         }
         footer {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
             padding: 10px;
-            z-index: 10;
+            z-index: 100;
             text-align: center;
+        }
+        a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact-info {
+            margin: 20px 0;
         }
         canvas {
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
     <canvas id="particleCanvas"></canvas>
-    <header>Portfólio de Gustavo</header>
+    <header>Gustavo Moreira Alonso</header>
     <div class="container">
-        <h2>Sobre Mim</h2>
-        <p>Olá! Meu nome é Gustavo e sou um desenvolvedor apaixonado por tecnologia e programação. Aqui estão alguns dos meus projetos.</p>
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Simulador de Conta Bancária</h3>
-            <p>Projeto em Java que simula operações bancárias básicas.</p>
-            <a href="#" style="color: #FFD700;">Ver no GitHub</a>
+        <div class="section">
+            <h2>Sobre Mim</h2>
+            <div class="contact-info">
+                <p>São Paulo – Brasil</p>
+                <p>qualonso14@gmail.com</p>
+                <p>20 anos</p>
+            </div>
+            <p>Estudante de Ciência da Computação e Técnico em Redes de Computadores, com experiência em suporte técnico e infraestrutura de TI.</p>
         </div>
-        <div class="projeto">
-            <h3>Outro Projeto</h3>
-            <p>Descrição breve do projeto.</p>
-            <a href="#" style="color: #FFD700;">Ver no GitHub</a>
+
+        <div class="section">
+            <h2>Objetivo</h2>
+            <ul>
+                <li>Estágio em TI</li>
+                <li>Técnico em Redes</li>
+                <li>Técnico em Suporte</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Qualificação</h2>
+            <p>Carreira em evolução na área de tecnologia com experiência em:</p>
+            <ul>
+                <li>Suporte ao usuário e resolução de problemas</li>
+                <li>Hardware e software de redes (Cisco, HP, Zabbix, Google Cloud, Putty)</li>
+                <li>Servidores físicos e virtualizados (Apache, Samba, Oracle VM, VMware)</li>
+                <li>Programação de nível básico-intermediário em C, Java e Python</li>
+                <li>Nível avançado no pacote Office</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Experiência Profissional</h2>
+            <div class="projeto">
+                <h3>Técnico de Informática - Móveis Katzer</h3>
+                <p>08/11/2022 – 12/07/2023</p>
+                <ul>
+                    <li>Suporte aos usuários da empresa em resolução de problemas no Windows, Android, IOS, impressoras</li>
+                    <li>Pacote Office completo</li>
+                    <li>Gerenciamento dos servidores e infraestrutura de rede</li>
+                    <li>Firewall (Pfsense)</li>
+                    <li>Windows Server: AD DS, backups e arquivos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Formação Acadêmica</h2>
+            <div class="projeto">
+                <h3>Técnico em Redes de Computadores</h3>
+                <p>Escola SENAI "Roberto Simonsen - Brás"</p>
+            </div>
+            <div class="projeto">
+                <h3>Ciência da Computação</h3>
+                <p>Instituto Federal de São Paulo - Salto</p>
+                <p>Previsão para conclusão: 07/2026 – Matutino</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Formação Complementar</h2>
+            <ul>
+                <li>Introduction to Cybersecurity – Cisco Academy</li>
+                <li>CyberOps Associate – Cisco Academy</li>
+                <li>CCNAv7: Introdução às redes – Cisco Academy</li>
+                <li>Create and Manage Cloud Resources – Google Cloud</li>
+                <li>Perform Foundational Infrastructure Tasks in Google Cloud</li>
+                <li>Perform Foundational Data, ML, and AI Tasks in Google Cloud</li>
+                <li>Build and Secure Networks in Google Cloud</li>
+                <li>Desvendando a Blockchain – SENAI</li>
+                <li>Privacidade e Proteção De Dados (LGPD) – SENAI</li>
+                <li>Economia Circular – SENAI</li>
+                <li>Desvendando a Indústria 4.0 – SENAI</li>
+                <li>Competência Transversal - Finanças Pessoais – SENAI</li>
+                <li>Competência Transversal - Educação Ambiental – SENAI</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Inglês – Intermediário (leitura e escrita)</li>
+                <li>Espanhol – Básico</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Pacote Office Avançado</li>
+                <li>Sistema operacional: Distribuições Linux, Windows, Windows Server, iOS</li>
+                <li>Configuração hardwares de rede (Switches, Routers, Firewalls, Access Points)</li>
+                <li>Programação intermediária em C, Java e Python</li>
+                <li>Servidores de arquivos, web, nuvem (samba, apache, google cloud)</li>
+                <li>Softwares de gerenciamento de redes (Wireshark, Zabbix)</li>
+                <li>Suporte ao usuário</li>
+                <li>Resolução de problemas</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <h3>Simulador de Conta Bancária</h3>
+                <p>Projeto em Java que simula operações bancárias básicas.</p>
+                <a href="#">Ver no GitHub</a>
+            </div>
+            <div class="projeto">
+                <h3>Outro Projeto</h3>
+                <p>Descrição breve do projeto.</p>
+                <a href="#">Ver no GitHub</a>
+            </div>
         </div>
     </div>
     <footer>
-        &copy; 2025 Gustavo Brito | <a href="#" style="color: #FFD700;">LinkedIn</a> | <a href="#" style="color: #FFD700;">GitHub</a>
+        &copy; 2025 Gustavo Moreira Alonso | 
+        <a href="https://www.linkedin.com/in/guualonso/" target="_blank">LinkedIn</a> | 
+        <a href="#" target="_blank">GitHub</a> |
+        <a href="mailto:qualonso14@gmail.com">E-mail</a>
     </footer>
 
     <script>
         const canvas = document.getElementById("particleCanvas");
         const ctx = canvas.getContext("2d");
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
+        
+        // Definir tamanho do canvas
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        
         const particlesArray = [];
         const numberOfParticles = 150;
+        const particleColor = "#4fc3f7"; // Cor dos efeitos em azul
 
         const mouse = {
             x: null,
@@ -101,8 +238,7 @@
         });
 
         window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            resizeCanvas();
             init();
         });
 
@@ -162,8 +298,7 @@
                 let y = Math.random() * (canvas.height - size * 2) + size;
                 let directionX = (Math.random() * 2) - 1;
                 let directionY = (Math.random() * 2) - 1;
-                let color = "#FFD700";
-                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, particleColor));
             }
         }
 
@@ -175,7 +310,7 @@
                     let distance = dx * dx + dy * dy;
                     if (distance < (canvas.width/7) * (canvas.height/7)) {
                         let opacity = 1 - (distance / 20000);
-                        ctx.strokeStyle = "rgba(255, 215, 0, " + opacity + ")";
+                        ctx.strokeStyle = `rgba(79, 195, 247, ${opacity})`;
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
