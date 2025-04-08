@@ -1,1 +1,9 @@
-
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4fc3f7;
+    margin: 0 auto 20px;
+    display: block;
+}
